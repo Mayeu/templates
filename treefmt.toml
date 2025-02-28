@@ -1,0 +1,12 @@
+[formatter]
+[formatter.nix]
+command = "alejandra"
+includes = ["*.nix"]
+
+[formatter.shell]
+command = "shfmt"
+options = ["-i", "2", "-s", "-w"]
+includes = ["*.sh", "*.bats"]
+
+[global]
+excludes = ["treefmt.toml", ".editorconfig"]
