@@ -14,7 +14,7 @@ justify me, or I may never respond.
 
 ## To use
 
-    nix flake init --templates 'github:Mayeu/templates#<template name>'
+    nix flake init --template 'github:Mayeu/templates#<template name>'
 
 ## Licence
 
