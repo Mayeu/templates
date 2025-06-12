@@ -1,4 +1,5 @@
 with (import <unstable> {});
+with lib;
   mkShell {
     buildInputs =
       [
