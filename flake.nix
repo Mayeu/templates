@@ -15,9 +15,9 @@
     flake-utils.lib.eachDefaultSystem (system: let
       pkgs = import nixpkgs {inherit system;};
     in {
-
       devShell = import ./shell.nix {inherit pkgs;};
-
+    })
+    // {
       templates = {
         envsh = {
           path = ./envsh;
@@ -30,5 +30,5 @@
           welcomeText = "This template assume that you have an <unstable> channel defined.";
         };
       };
-    });
+    };
 }
